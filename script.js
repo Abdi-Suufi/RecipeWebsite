@@ -1,5 +1,5 @@
-const appId = "AppID-HERE"; // get app id from "https://developer.edamam.com/edamam-recipes-api"
-const apiKey = "API-KEY-HERE"; // get api key from "https://developer.edamam.com/edamam-recipes-api"
+const appId = "b72c7a0c"; // get app id from "https://developer.edamam.com/edamam-recipes-api"
+const apiKey = "8e8bf44b50f9ce3bd687a4a81d21b9eb"; // get api key from "https://developer.edamam.com/edamam-recipes-api"
 
 async function searchRecipes() {
   const query = document.getElementById("query").value;

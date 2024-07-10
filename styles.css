@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.recipe-card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+h1 {
+    display: inline-block;
+    background-color: rgba(0, 82, 78, 0.4);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 82, 78, 0.4);
+}
+
+#title {
+    padding: 6px;
+}

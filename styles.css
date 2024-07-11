@@ -15,6 +15,10 @@ body {
   object-fit: cover;
 }
 
+.recipe-card {
+  background: linear-gradient(45deg, rgb(120, 224, 237), rgb(247, 196, 237));
+}
+
 h1 {
     display: inline-block;
     background-color: rgba(0, 82, 78, 0.4);
@@ -26,10 +30,10 @@ h1 {
     padding: 6px;
 }
 #btn {
-  width: 170px;
-  height: 60px;
+  width: 150px;
+  height: 40px;
   font-size: 18px;
-  background: linear-gradient(to right, rgb(241, 194, 238) 50%, rgb(119, 220, 234) 50%);
+  background: linear-gradient(to right, rgb(241, 194, 238) 40%, rgb(119, 220, 234) 100%);
   border: none;
   border-radius: 50px;
   color: #000;
@@ -37,7 +41,6 @@ h1 {
   cursor: pointer;
   transition: all 0.4s;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0 auto; /* Add this line to center the button horizontally */
 }
 
 #btn:hover {
@@ -55,11 +58,27 @@ h1 {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(248, 202, 241); /* Scrollbar background */
+    background: rgb(248, 202, 241);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(76, 219, 238); /* Scrollbar thumb */
-    border-radius: 10px; /* Optional: makes the thumb rounded */
-    border: 2px solid rgb(248, 202, 241); /* Optional: adds a border to the thumb */
+    background-color: rgb(76, 219, 238);
+    border-radius: 10px;
+    border: 2px solid rgb(248, 202, 241);
+}
+
+.input {
+ border: none;
+ border-radius: 15px;
+ padding: 8px;
+background: linear-gradient(to top left, rgb(241, 194, 238) 10%, rgb(119, 220, 234) 100%);
+ box-shadow: 6px 6px 12px rgb(76, 219, 238),
+             -6px -6px 12px rgb(248, 202, 241);
+ font-size: medium;
+ font-weight: bold;
+ max-width: 300px;
+}
+
+.input:focus {
+ outline-color: white;
 }

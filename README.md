@@ -27,7 +27,7 @@ To run this project locally, follow these steps:
 - Click on the "Search" button to find recipes related to your query.
 - Recipes matching the search query will be displayed below.
 
-![Screenshot 2024-07-10 084905](https://github.com/Abdi-Suufi/RecipeWebsite/assets/93520190/addc95a3-1209-4d9f-9beb-991329f79cf8)
+![image](https://github.com/Abdi-Suufi/RecipeWebsite/assets/93520190/faf3c649-4d2f-4fe8-b844-01c662638c6b)
 
 ## Dependencies
 This project uses the following external libraries:

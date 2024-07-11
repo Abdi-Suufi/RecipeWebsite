@@ -1,9 +1,9 @@
-const appId = "b72c7a0c"; // get app id from "https://developer.edamam.com/edamam-recipes-api"
-const apiKey = "8e8bf44b50f9ce3bd687a4a81d21b9eb"; // get api key from "https://developer.edamam.com/edamam-recipes-api"
+const appId = "b72c7a0c";
+const apiKey = "8e8bf44b50f9ce3bd687a4a81d21b9eb";
 
 async function searchRecipes() {
   const query = document.getElementById("query").value;
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${apiKey}`;
+  const url = `https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${apiKey}&from=0&to=60`;
 
   try {
     const response = await fetch(url);
@@ -24,7 +24,7 @@ function displayRecipes(recipes) {
     recipeCard.classList.add("col-md-4", "mb-4");
 
     recipeCard.innerHTML = `
-            <div class="card recipe-card">
+            <div class="card recipe-card text-center">
                 <img src="${recipe.image}" class="card-img-top" alt="${
       recipe.label
     }">
@@ -35,7 +35,7 @@ function displayRecipes(recipes) {
                     )}</p>
                     <a href="${
                       recipe.url
-                    }" target="_blank" class="btn btn-primary">View Recipe</a>
+                    }" target="_blank" class="btn btn-info">View Recipe</a>
                 </div>
             </div>
         `;
